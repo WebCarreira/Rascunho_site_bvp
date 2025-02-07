@@ -17,9 +17,216 @@ a{
 li{
     list-style: none;
 }
-@media (min-width:576px){
+@media (max-width: 576px) {
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    /* Logo */
+    .logo {
+        width: 50%;
+    }
+
+    /* Menu de navegação */
+    .nav_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav_container li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_container a {
+        display: block;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+    }
+    .sub_menu1, .sub_menu2 {
+        display: none;
+    }
+
+    /* Vídeo */
+    video {
+        width: 100%;
+    }
+
+    /* Botões */
+    .botoes_container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .botoes li {
+        width: 80%;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    /* Calendário */
+    .calendar-container {
+        width: 90%;
+        max-width: 250px;
+        position: relative;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 10px;
+        background: white;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .calendar-header h2 {
+        font-size: 12px;
+    }
+
+    .calendar-header button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 3px;
+        font-size: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .calendar-header button:hover {
+        background: #0056b3;
+    }
+
+    .weekdays {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        font-size: 8px;
+        background-color: #cea623;
+        color: white;
+        padding: 3px 0;
+        border-radius: 5px 5px 0 0;
+    }
+    .weekdays div {
+        padding: 5px;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 2px;
+    }
+
+    .day {
+        padding: 4px;
+        font-size: 8px;
+        background: #e3e3e3;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .today {
+        background: #ff5722;
+        color: white;
+        font-weight: bold;
+        border: 2px solid #d84315;
+    }
+
+    .event {
+        background: #ff5722;
+        color: white;
+        font-size: 7px;
+        border-radius: 2px;
+        padding: 1px;
+    }
+
+    /* Alertas */
+    .alertas {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .imagens_previsao_container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .previsao, .alerta_tempo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .texto_previsao {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Notícias */
+    .noticias_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 90%;
+    }
+
+    .noticias_container div {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Rodapé */
+    .medias_container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo_medias {
+        width: 30px;
+    }
+
+    .footer_container_menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .footer_container_menu li {
+        padding: 8px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+    }
 }
+
 @media (min-width: 557px) and (max-width: 1024px) {
     body {
         width: 100%;

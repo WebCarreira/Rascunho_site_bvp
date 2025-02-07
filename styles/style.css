@@ -309,14 +309,12 @@ li{
         border-radius: 15px;
     }
     /*Calendário de Eventos*/
-    .eventos h2{
-        text-align: center;
-    }
     .calendar-container {
-        width: 90%;
-        max-width: 500px;
+        width: 80%;
+        max-width: 300px;
         margin: 20px auto;
-        padding: 20px;
+        padding: 15px;
+        font-size: 12px;
         background: white;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
@@ -332,7 +330,8 @@ li{
         background: #007bff;
         color: white;
         border: none;
-        padding: 10px;
+        padding: 5px;
+        font-size: 12px;
         border-radius: 5px;
         cursor: pointer;
     }
@@ -344,12 +343,13 @@ li{
     .calendar-grid {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        gap: 5px;
+        gap: 3px;
         margin-top: 10px;
     }
     
     .day {
-        padding: 10px;
+        padding: 5px;
+        font-size: 10px;
         background: #e3e3e3;
         border-radius: 5px;
         position: relative;
@@ -358,9 +358,9 @@ li{
     .event {
         background: #ff5722;
         color: white;
-        font-size: 12px;
+        font-size: 9px;
         border-radius: 3px;
-        padding: 2px;
+        padding: 1px;
         margin-top: 5px;
     }
     /*Alertas*/

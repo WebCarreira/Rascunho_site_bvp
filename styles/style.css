@@ -311,6 +311,9 @@ li{
     /*Calendário de Eventos*/
     .calendar-container {
         width: 80%;
+        position: absolute;
+        right: 10px;
+        top: 280px;
         max-width: 300px;
         margin: 20px auto;
         padding: 15px;

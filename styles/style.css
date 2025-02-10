@@ -17,6 +17,61 @@ a{
 li{
     list-style: none;
 }
+/* Ajuste para os submenus */
+.sub_menu1, .sub_menu2 {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Submenu principal (Sobre) */
+.menu_sobre {
+    position: relative;
+}
+
+.sub_menu1 {
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    padding: 5px 0;
+}
+
+/* Submenu secundário (Companhias) - Aparece ao lado */
+.sub_menu2 {
+    top: 0;
+    left: 100%;
+    min-width: 150px;
+    padding: 5px 0;
+}
+
+/* Estilos para os itens do submenu */
+.sub_menu1 li, .sub_menu2 li {
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub_menu1 li:last-child, .sub_menu2 li:last-child {
+    border-bottom: none;
+}
+
+/* Exibir submenus ao passar o mouse */
+.menu_sobre:hover .sub_menu1 {
+    display: block;
+}
+
+.sub_menu1 li:hover .sub_menu2 {
+    display: block;
+}
+
+/* Ajuste para evitar fechamento imediato ao mover o mouse */
+.menu_sobre, .sub_menu1, .sub_menu2 {
+    transition: all 0.2s ease-in-out;
+}
+
 @media (max-width: 576px) {
     body {
         width: 100%;

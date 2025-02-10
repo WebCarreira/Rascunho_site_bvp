@@ -73,3 +73,58 @@ document.addEventListener("DOMContentLoaded", function () {
 
     generateCalendar(currentYear, currentMonth);
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let sobreMenu = document.querySelector(".menu_sobre");
+    let subMenu1 = document.querySelector(".sub_menu1");
+    let subMenu2 = document.querySelector(".sub_menu2");
+    let companhiasMenu = document.querySelector(".sub_menu1 li:first-child");
+
+    let timer1, timer2;
+
+    // Mostrar o primeiro submenu (Sobre)
+    sobreMenu.addEventListener("mouseenter", function() {
+        clearTimeout(timer1);
+        subMenu1.style.display = "block";
+    });
+
+    sobreMenu.addEventListener("mouseleave", function() {
+        timer1 = setTimeout(() => {
+            subMenu1.style.display = "none";
+        }, 300); // Tempo de espera antes de fechar
+    });
+
+    // Mostrar o submenu de companhias
+    companhiasMenu.addEventListener("mouseenter", function() {
+        clearTimeout(timer2);
+        subMenu2.style.display = "block";
+    });
+
+    companhiasMenu.addEventListener("mouseleave", function() {
+        timer2 = setTimeout(() => {
+            subMenu2.style.display = "none";
+        }, 300);
+    });
+
+    // Evitar que os submenus desapareçam imediatamente ao interagir com eles
+    subMenu1.addEventListener("mouseenter", function() {
+        clearTimeout(timer1);
+    });
+
+    subMenu1.addEventListener("mouseleave", function() {
+        timer1 = setTimeout(() => {
+            subMenu1.style.display = "none";
+        }, 300);
+    });
+
+    subMenu2.addEventListener("mouseenter", function() {
+        clearTimeout(timer2);
+    });
+
+    subMenu2.addEventListener("mouseleave", function() {
+        timer2 = setTimeout(() => {
+            subMenu2.style.display = "none";
+        }, 300);
+    });
+});

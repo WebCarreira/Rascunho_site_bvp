@@ -1,3 +1,4 @@
+// Calendário de eventos
 document.addEventListener("DOMContentLoaded", function () {
     const calendar = document.getElementById("calendar");
     const monthYear = document.getElementById("monthYear");
@@ -74,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     generateCalendar(currentYear, currentMonth);
 });
 
-
+// Sub-Menus
 document.addEventListener("DOMContentLoaded", function() {
     let sobreMenu = document.querySelector(".menu_sobre");
     let subMenu1 = document.querySelector(".sub_menu1");

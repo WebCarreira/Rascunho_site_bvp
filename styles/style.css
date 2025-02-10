@@ -272,7 +272,6 @@ li{
         border-radius: 5px;
     }
 }
-
 @media (min-width: 557px) and (max-width: 1024px) {
     body {
         width: 100%;
